@@ -46,14 +46,14 @@ The following instance methods are available on the `Text::Scanner` object `s`:
 | `s.put_line`  | an alias for `ungets` |
 | `s.put_text(TEXT)`  | put `TEXT` back into the input stream |
 | `s.ungets(line)` | put back `line` as the next line of input |
-| `s.each{|line| ...}` | iterate the block over each line |
-| `s.map{|line| ...}` | process each line until _EOF_ returning an array of the iteration results |
+| `s.each {|line| ...}` | iterate the block over each line |
+| `s.map{ |line| ...}` | process each line until _EOF_ returning an array of the iteration results |
 | `s.skip_until(PAT)` | skip lines of input until line matches `PAT` |
 | `s.skip_while(PAT)` | skip lines of input while line matches `PAT` |
-| `s.scan_while(PAT){|line, match| ...}` | process lines while each line matches `PAT` |
-| `s.each_while(PAT){|line| ...}` | process lines matching `PAT` |
-| `s.map_while(PAT){|line, match| ...}` | invoke block while lines match `PAT`, returning each iteration result in an array |
-| `s.each_until(PAT){|line| ...}` | process lines until a line matches `PAT` |
+| `s.scan_while(PAT) {|line, match| ...}` | process lines while each line matches `PAT` |
+| `s.each_while(PAT) {|line| ...}` | process lines matching `PAT` |
+| `s.map_while(PAT) {|line, match| ...}` | invoke block while lines match `PAT`, returning each iteration result in an array |
+| `s.each_until(PAT) {|line| ...}` | process lines until a line matches `PAT` |
 
 ## Development
 
